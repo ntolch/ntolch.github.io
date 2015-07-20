@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="default-blog.css">
+
+  <title>Nicole Tolch</title>
+  <meta charset="UTF-8">
+</head>
+
+<header>Nicole Tolch</header>
+
+<nav>
+  <ul>
+    <li> <a href="#">About</a> </li>
+    <li> <a href="#">Work</a> </li>
+    <li> <a href="#">Blog</a> </li>
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Absolutely Relative</h1>
+  <h4>July 20, 2015</h4>
+
+  <section>
+    <div id="left"> <img class="blog-image" src="http://www.dennisplucinik.com/blog/wp-content/uploads/2012/03/position-relative.jpg" /> </div>
+
+    <p>
+      Dear Past Self...I'm about explain what'll be the cause of quite a bit of head-scraching so completely that you'll wish I'd left something of the subject for you to research and discover on your own.
+    </p>
+    <p>
+      The <code>position</code> property lets you control an element's type of positioning on the webpage. There are 4 values you can give it: <code>static</code>, <code>relative</code>, <code>fixed</code>, and <code>absolute</code>. The <code>static</code> position is the default value--the element will simply do what it would've otherwise done. So we won't worry about that.
+    </p>
+    <p>
+      The <code>relative</code> position affects where the element will be positioned in relation to it normal, or static, position. Initially, I kept thinking of this value as making elements move around other around. You know, in relation to the other objects. Since it only relates an element's position to it's normal position, if no other values are given, the element will remain unchanged, in it's status position. Let me give you an example:
+    </p>
+    <p>
+      <img src="t2-relative.png" alt="relative example"/>
+    </p>
+    <p>
+      <img src="t2-relative2.png" alt="relative example 2"/>
+    </p>
+    <p>
+      An element with a <code>fixed</code> position is positioned relative to the browser. It stays in exactly the same place on the screen when you scroll through the webpage. Other elements ignore an object that is in a fixed position when figuring out where to place themselves. Here's an example:
+    </p>
+    <p>
+      <img src="t2-fixed.png"/>
+    </p>
+    <p>
+      <img src="t2-fixed2.png"/>
+    </p>
+    <p>
+      The <code>absolute</code> position is one of my favorites and, funny enough, is the most complicated. It position an element relative to the closest parent element that has relative or absolute positioning. It's similar to the <code>fixed</code> position in that it makes an element sort of invisible to other elements--the element isn't affected by the other objects and vice versa. Except the <code>absolute</code> position fixes the element to the nearest positioned parent instead of to the screen. Time for an example!
+    </p>
+    <p>
+      <img src="t2-absolute.png"/>
+    </p>
+    <p>
+      Now that we're both experts on the subject, I challenge you, past self, to write up a post explaining the various <code>position</code>s to someone else. It's okay, you've got some time. I'll read it later.
+    </p>
+  </section>
+</main>
