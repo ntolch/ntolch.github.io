@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="default-blog.css">
+
+  <title>Nicole Tolch</title>
+  <meta charset="UTF-8">
+</head>
+
+<header>Nicole Tolch</header>
+
+<nav>
+  <ul>
+    <li> <a href="#">About</a> </li>
+    <li> <a href="#">Work</a> </li>
+    <li> <a href="#">Blog</a> </li>
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Harry Potter and the Magical Class</h1>
+  <h4>August 10, 2015</h4>
+
+  <section>
+    <div id="left"> <img class="blog-image" src="http://i.imgur.com/KGrV41o.png" /> </div>
+
+    <p>
+      Okay, past self...let's talk about wizards. And classes. But mostly wizards. Well, wizards as classes. Or wizards as class instances. Don't worry, we'll get to that. Starting now.
+    </p>
+      <code> <pre>
+        class Wizard
+
+          def initialize(name)
+            @name = name
+          end
+
+          def lumos
+            p @name + " lights up the room."
+          end
+
+        end
+      </pre> </code>
+
+    <p>
+      Woah, did you see that? We basically just brought things (people) called Wizards into existence by creating a Wizard class! What, you missed it? Okay, so this part?
+    </p>
+      <code> <pre>
+        class Wizard
+          ...
+        end
+      </pre> </code>
+    <p>
+      That the creation of a "real-world object" that we've named Wizard. In between those lines? That's where the magic happens. Everything that starts with <code>def</code> ("define") is a method. It's something all wizards can do. But we have to define their abilities for them. Let's look at the first method.
+    </p>
+    <code> <pre>
+          def initialize(name)
+            @name = name
+          end
+    </pre> </code>
+    <p>
+      The initialize method is one that all classes must have. This will run as soon as a new wizard is created. Once a wizard is born, it has to have a name. Aside from it being tradition for a child to have a name at birth, we know that it's required because the initialize method expects a <code>(name)</code> parameter. The <code>@</code> symbol makes the wizard's name accessbile from any other method in the Wizard class. It's called an instance variable.
+    </p>
+    <code> <pre>
+          def lumos
+            p @name + " lights up the room!"
+          end
+    </pre> </code>
+    <p>
+      The lumos method! As you can see, it uses the instance variable <code>@name</code>. And when it's "called" (when we ask the wizard to use lumos), the wizards lights up the room, and the statement in the middle prints out! Let's see it in action!
+    </p>
+    <code> <pre>
+        the_boy_who_lived = Wizard.new("Harry Potter")
+        the_boy_who_lived.lumos
+
+        => Harry Potter lights up the room!
+    </pre> </code>
+    <p>
+      What! You saw that, right? A wizard--The Boy Who Lived--is born. Straight away, he's given a name: Harry Potter. When we ask him to use the lumos method we defined in the Wizard class, he does! Excellent, Harry! Well done!
+    </p>
+    <p>
+      You know so much more now, past self! Just be careful with this new magic-like knowledge. As Professor Dumbledore once said, "The truth is a beautiful and terrible thing, and should therefore be treated with caution."
+    </p>
+
+    <section>
+      <div id="left"> <img class="blog-image" src="https://lh3.googleusercontent.com/-9XkIMPkICpA/VbNWwyW2BMI/AAAAAAAAJ5Y/y4SHSCHrggQ/w426-h338/tumblr_lp5d0vCYNM1qdadoc.png" /> </div>
+    </section>
+  </section>
+</main>
