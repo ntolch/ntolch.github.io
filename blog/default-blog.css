@@ -24,3 +24,8 @@ img {padding-bottom:15px; padding-top:15px;}
 .blog-image {width: 25%; padding-top:2%}
 /*#left {position:relative; left:0; display:inline;} */
 /*#right {position:relative; right:0; display:inline;} */
+
+.p-code {
+  padding-left: 10px;
+  display: block;
+}
