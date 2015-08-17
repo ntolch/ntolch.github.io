@@ -21,23 +21,49 @@
 </nav>
 
 <main>
-  <h1>BLOG TITLE</h1>
+  <h1>Scoping Unicorns</h1>
   <h4>August 16</h4>
 
   <section>
-    <div id="left"> <img class="blog-image" src="http://www.jeffrandleman.com/wp-content/uploads/2012/01/OneWordCommit.jpg" /> </div>
+    <div id="left"> <img class="blog-image" src="http://phdcomics.com/comics/archive/phd081806s.gif" /> </div>
 
     <p>
-
+      Dear past self... Let's talk about scope. Scope, in general, is the extent of a subject matter that something deals with. But we're talking about the language of ruby, here, so it's...basically the same thing. It determines when and where you can access certain variables in your code. Let's use the classic example of the unicorn to break this down.
     </p>
+
+    <code><pre>
+      class Unicorn
+
+        def initialize(name)
+          @@color = pink
+          @name = name
+        end
+
+        def touch(name)
+          place = "Forget-Me Land"
+          p "What are you doing?? You can't touch a unicorn!"
+          p "#{@name} got startled and transported you to #{place}, which you immediately forget."
+        end
+
+        def where_am_i
+          p "You have no way of knowing where you are."
+        end
+
+      end
+    </pre></code>
 
     <p>
-
+      We'll start with the <code>@@color</code> class variable. All class variables begin with '@@'. They're accessable across every single example (aka instance) of a Unicorn that you create. Since everyone knows that all Unicorns are pink, that's what we set the color equal to. Now, no matter which Unicorn we refer to, they will all be the same color that everyone knows unicorns are: pink.
     </p>
     <p>
-
+      The <code>@name</code> variable is an instance variable. This means it changes for every new Unicorn you create based on what you decide to name it. Most Unicorns are named Minerva, but since you can technically name them something else, we won't make it a class variable.
     </p>
-
+    <p>
+      Now what about that <code>place</code> variable in the unrecommended <code>touch</code> method? Because it has no special character to start it and it's all lowercase, that would be an local variable. Local variables aren't accessable to other methods--even if they're in the same class. That's why the <code>where_am_i</code> wouldn't be able to tell you where are. It wouldn't be able to get to where the place is defined. It's invisible.
+    </p>
+    <p>
+      And now you know not to touch pink Unicorns. (If you see a white one, it's okay--it's probably fake.)
+    </p>
 
   </section>
 </main>
