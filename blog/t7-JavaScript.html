@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="default-blog.css">
+
+  <title>Nicole Tolch</title>
+  <meta charset="UTF-8">
+</head>
+
+<header>Nicole Tolch</header>
+
+<nav>
+  <ul>
+    <li> <a href="#">About</a> </li>
+    <li> <a href="#">Work</a> </li>
+    <li> <a href="#">Blog</a> </li>
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Objects vs Hashes</h1>
+  <h4>August 23, 2015</h4>
+
+  <section>
+    <div id="left"> <img class="blog-image" src="#" /> </div>
+
+    <p>
+      JavaScript's objects are very similar to ruby's hash objects. The differences can be subtle.
+    </p>
+      First, let's look at how you access a value from each. Both JavaScript objects and ruby hashes contain key/value pairs, like so: <code>secretAgent = {codeName: "Pink Panter"} </code> In JavaScript, you would access the value of <code>codeName</code> by typing <code>secretAgent.codeName</code> to get <code>Pink Panter</code>. In ruby, however, you'd get the same value by typing <code>secretAgent[:codeName]</code>. (I told you the differences were subtle.)
+    <p>
+      The difference in creating new key/value pairs is much the same. In JavaScript, you could add to our secretAgengt object with this: <code>secretAgent.secretWeapon = "exploding lighter";</code>. In ruby, you'd do this: <code>secretAgent[:secretWeapon] = "ticking timebomb pocketwatch"</code>.
+    </p>
+    <p>
+      Also, JavaScript objects are variables within a variable. Ruby hashes contain instance variables. (Did I mention how subtle the differences could be?) This difference mainly has to do with scope. In JavaScript, there are essentially only 2 levels of scope--in a function and outside a function. In ruby, however, there are a few more levels of scope. Instance variables are accessed only by an instance of the class in which the hash is created.
+    </p>
+
+  </section>
+</main>
