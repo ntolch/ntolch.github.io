@@ -1,0 +1,64 @@
+<!-- <body>
+  <header>Cheatsheet</header>
+    <section>
+      <h3>Loops in Ruby and JavaScript</h3>
+        <p>
+          Comparing and contrasting the looping methods/functions in Ruby and JavaScript:
+          #each and .Foreach()
+          #map and .map()
+
+        </p>
+____________________ -->
+
+    <h3>Which is easier?</h3>
+    <p>
+    It depends. Ruby's syntax, it's often argued, is more intuitive and simple. JavaScript, on the other hand, has syntax that, for looping, can be more self-explanatory.
+    </p>
+
+    <h3>While Loops</h3>
+    <p>
+      <em>Ruby:</em>
+    </p>
+    <p>
+      <code><pre>
+        awesome_sauce = []
+        i = 1
+        while i < 4
+          awesome_sauce.push("Cool thing #{i}")
+          i += 1
+        end
+
+        =>awesome_sauce = ["Cool thing 1", "Cool thing 2", "Cool thing 3"]
+      </pre></code>
+    </p>
+
+    <p>
+      <em>JavaScript:</em>
+    </p>
+    <p>
+      <code><pre>
+        var awesome_sauce = [];
+        i = 1;
+        while (i < 4) {
+          awesome_sauce.push("Cool thing " + i);
+          i += 1;
+        }
+
+        =>awesome_sauce = ["Cool thing 1", "Cool thing 2", "Cool thing 3"]
+      </pre></code>
+    </p>
+    <p>
+      Pretty similar. But JavaScript knows that this sort of while looping is pretty common, so it has its own shortcut for it--the for loop.
+    </p>
+    <p>
+      <em>JavaScript <code>for</code> Loops:</em>
+    </p>
+    <p>
+      <code><pre>
+        for (var i = 1; i < 4; i++)
+          awesome_sauce.push("Cool thing " + i);
+      </code></pre>
+    </p>
+    <p>
+      For this <code>for</code> loop, the syntax goes like this: <code>for (set counter variable; condition (the 'while' part of the loop); increment counter variable)</code>
+    </p>
