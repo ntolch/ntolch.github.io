@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="default-blog.css">
+
+  <title>Nicole Tolch</title>
+  <meta charset="UTF-8">
+</head>
+
+<header>Nicole Tolch</header>
+
+<nav>
+  <ul>
+    <li> <a href="#">About</a> </li>
+    <li> <a href="#">Work</a> </li>
+    <li> <a href="#">Blog</a> </li>
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>What's Your Function?</h1>
+  <h4>August 29, 2015</h4>
+
+  <section>
+    <div id="left"> <img class="blog-image" src="https://s-media-cache-ak0.pinimg.com/236x/c7/8b/22/c78b2230875572b6c80585f67bd41961.jpg" /> </div>
+
+    <p>
+      Dear past self: I'm gonna teach you about functional programming. It sounds scary, I know. That's because it is. Well, at first. But remember, we fear what we don't understand. It'll get better, I promise.
+    </p>
+
+    <p> There are two basic concepts you have to know when dealing with functional programs:
+      <ol>
+        <li>Data must be immutable (unchanging). Instead of changing existing data, you just create a new data structure with the updated data.</li>
+        <li>Programs should be without ‘memory’ of the past. So each time the program runs should be like the first time. Feel like the very first time.</li>
+      </ol>
+    </p>
+    <p>
+      Still sound scary? Shhh shhh, it's ok... After the initial learning pains, it won't hurt you. It's there to help! How, you ask? And is it worth it? Well...good questions. It can make your programs easier to understand and faster. Instead of looping (like going through a list of items and doing the same thing to each), functional programming is more like making a list of items where a function is being used on each. Ah...ok, that just confused both you and me more. Um...ok, usually, fucntional programming involves using other functions to help define the main function--sometimes even using the main function inside itself. (What!) It's like breaking up chunks of your code that work towards a similar task and giving them their own name.
+    </p>
+    <p>
+      Also, functional programming doesn't have side effects. Take this, for example:
+    </p>
+    <p>
+      <code><pre>
+        function () {
+          console.log("Hello, world!")
+        };
+      </pre></code>
+    </p>
+    <p>
+    That <code>print</code> statement? That there's a side effect. Let's take a look at code without any.
+    </p>
+    <p>
+      <code><pre>
+        function hello () {
+          greet = console.log("Hello, world!")
+          return greet
+        };
+      </pre></code>
+    </p>
+    <p>Now that there's a functional program! You see? Well...maybe not. Ok, so in second program, we're <i>describing</i> what we want done rather than <i>executing</i> or carrying it out. Just keep practicing, past self. This helped, but practice is the only way you'll really get it.</p>
+  </section>
+</main>
