@@ -11,14 +11,23 @@
 
 <header>Nicole Tolch</header>
 
-<nav>
-  <ul>
-    <li> <a href="#">About</a> </li>
-    <li> <a href="#">Work</a> </li>
-    <li> <a href="#">Blog</a> </li>
-    <li> <a href="#">Contact</a> </li>
-  </ul>
-</nav>
+  <nav>
+    <section>
+      <a class="sm" href="https://twitter.com/NikiTolch">
+        <img class="sm" src="../imgs/twitter-icon.png" alt="Twitter"/></a>
+      <a class="sm" href="https://www.facebook.com/NikiTolch">
+        <img class="sm" src="../imgs/facebook-icon.png" alt="Facebook"/></a>
+      <a class="sm" href="https://www.linkedin.com/in/NicoleTolch">
+        <img class="sm" src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a>
+    </section>
+
+    <ul>
+      <li> <a href="#">About</a> </li>
+      <li> <a href="#">Work</a> </li>
+      <li> <a href="http://ntolch.github.io/blog-index.html#">Blog</a> </li>
+      <li> <a href="http://ntolch.github.io/contact.html">Contact</a> </li>
+    </ul>
+  </nav>
 
 <main>
 
@@ -29,9 +38,9 @@
     <div id="left"> <img class="blog-image" src="#" /> </div>
 
     <p>
-      Today, past self, I'm going to teach you about the awesome, yet sometimes overlooked <code>group_by</code> method. 
-      <code>group_by</code> has a pretty special way of turning an array into a hash. When you pass this beautiful method a 
-      block of code, the results of code block become the keys of the new hash. The items in the array become the values of 
+      Today, past self, I'm going to teach you about the awesome, yet sometimes overlooked <code>group_by</code> method.
+      <code>group_by</code> has a pretty special way of turning an array into a hash. When you pass this beautiful method a
+      block of code, the results of code block become the keys of the new hash. The items in the array become the values of
       the keys for which the items match up with or are true. You know what? Let's see an example.
     </p>
     <p>
@@ -48,11 +57,11 @@
       </code>
     </p>
     <p>
-      Ok, so I've got my list of folks in the office today. I decide that people with the same number of letters in their 
-      first name should be grouped together, so I tell the whole office to line up--one by one, I want them to figure out the 
-      length of their name and get together accordingly. Jim is first on to stand. His name is 3 letters long, so he gets in 
-      the area I've just right now labeled as '3' just now--like, after he counted the letters in his name, before he even 
-      started to move. (I'm lightening fast.) Then Pam joins him cause, whaddya know, her name is 3 letter long, too! 
+      Ok, so I've got my list of folks in the office today. I decide that people with the same number of letters in their
+      first name should be grouped together, so I tell the whole office to line up--one by one, I want them to figure out the
+      length of their name and get together accordingly. Jim is first on to stand. His name is 3 letters long, so he gets in
+      the area I've just right now labeled as '3' just now--like, after he counted the letters in his name, before he even
+      started to move. (I'm lightening fast.) Then Pam joins him cause, whaddya know, her name is 3 letter long, too!
       We go down the list and Michael and Toby end up being alone. Ah, well.
     </p>
     <p>
