@@ -1,10 +1,10 @@
 html {
   font-family: 'Josefin Sans', 'Open Sans', sans-serif;
-  background-color: #FFF2FD;
+  /*background-color: #FFF2FD;*/
   background:
     linear-gradient(
-      rgba(28, 18, 23, 0.7),
-      rgba(28, 18, 23, 0.7)
+      rgba(20, 11, 23, 0.5),
+      rgba(20, 11, 23, 0.5)
       ),
     url(imgs/AboutMe-pic-2.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -15,10 +15,10 @@ html {
 }
 
 header {
-  width:100%;
+  /*width:100%;*/
   font-family: 'Titillium Web', sans-serif;
   font-size:3em;
-  text-align:center;
+  text-align:left;
   margin-top: 55px;
 
   color:white;
@@ -44,7 +44,23 @@ nav {
   background-color: rgba(1, 1, 1, 1);
   color: rgba(1, 1, 1, 0.8);
 }
-ul li {font-size: 1.4em; font-weight: bolder; padding: 9%; display: inline;}
+
+.quote {
+  padding: 60px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#quote-second-line {
+  margin-top: -45px;
+}
+
+ul li {font-size: 1.4em; font-weight: bolder; padding: 5.5%; display: inline; color: white;}
+
+#name {
+  margin-left: -25px;
+}
 
 a {
   padding-left: 8px;
@@ -61,8 +77,8 @@ div:first-child {margin-top:4px; }
   height:27px;
   width:27px;
   display:inline-block;
-  float:left;
-  margin-left:10px;
+  float:right;
+  margin-right:10px;
   padding-top:6px; }
 
 /*#bio-pic {
