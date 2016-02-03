@@ -100,7 +100,7 @@ li p {
   width: 50%;
 }
 
-#blogs {
+#page-title {
   margin-top: 7%;
 
 }
@@ -115,3 +115,15 @@ div h2 {
 .blog-image {width: 25%; padding-top:2%}
 /*#left {position:relative; left:0; display:inline;} */
 /*#right {position:relative; right:0; display:inline;} */
+
+.portfolio-item-name {
+  font-size: 1.2em;
+  /*line-height: 130%;*/
+  margin-left: -20px;
+
+}
+
+.portfolio-description {
+  font-size: .9em;
+  font-weight: 100;
+}
