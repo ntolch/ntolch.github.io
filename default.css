@@ -1,12 +1,13 @@
 html {
+  color: black;
   font-family: 'Josefin Sans', 'Open Sans', sans-serif;
   /*background-color: #FFF2FD;*/
-  background:
+/*  background:
     linear-gradient(
       rgba(20, 11, 23, 0.5),
       rgba(20, 11, 23, 0.5)
       ),
-    url(imgs/AboutMe-pic-2.png) no-repeat center center fixed;
+    url(imgs/AboutMe-pic-2.png) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +22,7 @@ header {
   text-align:left;
   margin-top: 55px;
 
-  color:white;
+  /*color:white;*/
 }
 nav {
   position:fixed;
@@ -47,7 +48,7 @@ nav {
 
 .quote {
   padding: 60px;
-  color: white;
+  /*color: black;*/
   text-align: center;
   font-size: 50px;
 }
@@ -56,7 +57,7 @@ nav {
   margin-top: -45px;
 }
 
-ul li {font-size: 1.4em; font-weight: bolder; padding: 5.5%; display: inline; color: white;}
+ul li {font-size: 1.4em; font-weight: bolder; padding: 5.5%; display: inline; color: black;}
 
 #name {
   margin-left: -25px;
@@ -87,26 +88,9 @@ div:first-child {margin-top:4px; }
   position:absolute;
 }*/
 
-li p {
-  padding:10px;
-  background:
-    linear-gradient(
-      rgba(2, 2, 2, 0.5),
-      rgba(2, 2, 2, 0.5)
-      );
-
-  position: relative;
-  margin:auto;
-  width: 50%;
-}
-
-#page-title {
-  margin-top: 7%;
-
-}
 
 div h2 {
-  color: white;
+  /*color: black;*/
   position: fixed;
   /*margin-left: -3.4%;*/
   font-size: 2em;
@@ -116,13 +100,82 @@ div h2 {
 /*#left {position:relative; left:0; display:inline;} */
 /*#right {position:relative; right:0; display:inline;} */
 
+
+.contact-methods {
+  font-size: 22px;
+  margin-left: 44px;
+  margin-top: 100px;
+
+}
+
+.contact-methods a {
+  color: black
+}
+
+/*Portfolio*/
+.wya {
+  text-align: center;
+  /*display: inline-block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  width: 350px;
+  border: gray 1px solid;
+  margin-left: 20%;
+}
+
+.stardust {
+  /*width: 50%;*/
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#stardust-home {
+  width: 800px;
+  padding-bottom: 40px
+}
+#stardust-signin {
+  width: 500px;
+  padding-bottom: 40px
+}
+#stardust-movies {
+  width: 500px;
+  padding-bottom: 40px
+}
+
+#page-title {
+  margin-top: 7%;
+}
+
+#page-title a {
+  color: black;
+
+}
+
 .portfolio-item-name {
   font-size: 1.2em;
   /*line-height: 130%;*/
   margin-left: -20px;
+  border-bottom: gray solid 3px;
+  border-spacing: 100;
+  padding: 3px 60% 3px 3px
 }
 
 .portfolio-description {
   font-size: .9em;
   font-weight: 100;
+}
+
+li p {
+  padding:22px;
+/*  background:
+    linear-gradient(
+      rgba(2, 2, 2, 0.5),
+      rgba(2, 2, 2, 0.5)
+      );*/
+
+  position: relative;
+  margin:auto;
+  width: 50%;
 }
