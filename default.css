@@ -1,13 +1,13 @@
 html {
-  color: black;
+  color: white;
   font-family: 'Josefin Sans', 'Open Sans', sans-serif;
   /*background-color: #FFF2FD;*/
-/*  background:
+  background:
     linear-gradient(
       rgba(20, 11, 23, 0.5),
       rgba(20, 11, 23, 0.5)
       ),
-    url(imgs/AboutMe-pic-2.png) no-repeat center center fixed;*/
+    url(imgs/chicago-skyline.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +48,7 @@ nav {
 
 .quote {
   padding: 60px;
-  /*color: black;*/
+  color: white;
   text-align: center;
   font-size: 50px;
 }
@@ -57,7 +57,7 @@ nav {
   margin-top: -45px;
 }
 
-ul li {font-size: 1.4em; font-weight: bolder; padding: 5.5%; display: inline; color: black;}
+ul li {font-size: 1.4em; font-weight: bolder; padding: 5.5%; display: inline; color: white;}
 
 #name {
   margin-left: -25px;
@@ -90,7 +90,7 @@ div:first-child {margin-top:4px; }
 
 
 div h2 {
-  /*color: black;*/
+  color: white;
   position: fixed;
   /*margin-left: -3.4%;*/
   font-size: 2em;
@@ -109,7 +109,7 @@ div h2 {
 }
 
 .contact-methods a {
-  color: black
+  color: white
 }
 
 
@@ -120,7 +120,7 @@ div h2 {
 }
 
 .construction a {
-  color: black
+  color: white
 }
 
 /*Portfolio*/
@@ -160,7 +160,7 @@ div h2 {
 }
 
 #page-title a {
-  color: black;
+  color: white;
 
 }
 
